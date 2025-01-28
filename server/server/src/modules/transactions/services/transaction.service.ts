@@ -5,8 +5,8 @@ import {
   Transaction,
   TransactionDocument,
 } from '../entities/transactions.schema';
-import { CreateTransactionDto } from '../dto/create-transaction.dto';
-import { UpdateTransactionDto } from '../dto/update-transaction.dto';
+import { CreateTransactionDto } from '../dto/createTransaction.dto';
+import { UpdateTransactionDto } from '../dto/updateTransaction.dto';
 import { Purpose } from 'src/common/types/types';
 
 @Injectable()
