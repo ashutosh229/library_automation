@@ -1,15 +1,4 @@
-import { IsEnum, IsNotEmpty } from 'class-validator';
-import { Purpose } from '../../../common/types/types';
+import { PartialType } from '@nestjs/mapped-types';
+import { CreateAttendanceDto } from './createAttendance.dto';
 
-export class CreateAttendanceDto {
-  @IsNotEmpty()
-  studentId: string;
-
-  @IsEnum(Purpose)
-  purpose: Purpose;
-
-  @IsNotEmpty()
-  entryTime: Date;
-
-  exitTime?: Date;
-}
+export class UpdateAttendanceDto extends PartialType(CreateAttendanceDto) {}
