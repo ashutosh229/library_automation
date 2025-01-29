@@ -10,10 +10,10 @@ export class Attendance {
   purpose: string;
 
   @Prop({ required: true })
-  entryTime: string;
+  entryTime: Date;
 
   @Prop()
-  exitTime: string;
+  exitTime: Date;
 }
 
 export type AttendanceDocument = Attendance & Document;
