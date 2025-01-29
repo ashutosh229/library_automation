@@ -10,12 +10,12 @@ import { Model, ObjectId } from 'mongoose';
 import {
   Attendance,
   AttendanceDocument,
-} from '../attendance/entities/attendance.schema';
-import { CreateAttendanceDto } from '../attendance/dto/createAttendance.dto';
-import { UpdateAttendanceDto } from '../attendance/dto/updateAttendance.dto';
-import { Purpose } from '../../common/types/types';
+} from '../entities/attendance.schema';
+import { CreateAttendanceDto } from '../dto/createAttendance.dto';
+import { UpdateAttendanceDto } from '../dto/updateAttendance.dto';
+import { Purpose } from '../../../common/types/types';
 import { Subscription } from 'rxjs';
-import { NFCService } from '../../hardware/nfc/nfc.service';
+import { NFCService } from '../../../hardware/nfc/nfc.service';
 import { TransactionService } from 'src/modules/transactions/services/transaction.service';
 
 @Injectable()
